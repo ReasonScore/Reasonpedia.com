@@ -3,10 +3,7 @@ title: "Should you get the COVID-19 Vaccine?"
 description: "Help me understand if you should get the vaccine even if recommended by the CDC."
 permalink: covid-vaccine/
 ---
-<div class="content">
-  <h2>Help Me Correct My Analysis</h2>
-  <rs-score score-tree-id="ScoreTree"></rs-score>
-</div>
+<rs-score score-tree-id="ScoreTree"></rs-score>
 <script> //Settings for this page
   window.RsSettings = {
     disableExternalDb: false,
