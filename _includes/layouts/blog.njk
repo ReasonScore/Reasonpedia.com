@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+section: blog
+permalink: /blog/index.html
+---
+{{ layoutContent | safe }}
+
+{% set items = collections.post %}
+{% include 'components/grid.njk' %}

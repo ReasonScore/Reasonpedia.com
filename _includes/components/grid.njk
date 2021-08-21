@@ -1,0 +1,21 @@
+<div class="card-deck">
+    {%- for item in items | reverse -%}
+        {% set regExp = r/fragment/g %}
+        {% if regExp.test(item.inputPath) == false and item.data.draft != true %}
+            <a class="card" href="{{item.url}}">
+                {% if item.data.image %}
+                    {% image item.data.image, item.data.title, item.data.imagePosition, "card-img-top", item.data.imageFocusArea %}
+                {% else %}
+                    <div class="bigtext" >{{ item.data.title }}</div>
+                {% endif %}
+                <div class="card-body">
+                    <h3 class="card-title">{{ item.data.title }}</h3>
+                    <p class="card-text">
+                        {%- set stringItems = item.data.tags -%}
+                        {%- include 'components/stringItems.njk' -%}
+                    </p>
+                </div>
+            </a>
+        {% endif %}
+    {%- endfor -%}
+</div>

@@ -1,0 +1,8 @@
+---
+permalink: /site.css
+---
+{% set css %}
+  {% file './site/css/base.css.md' %}
+  {% file './site/css/custom.css.md' %}
+{% endset %}
+{{ css | cssmin | safe }}

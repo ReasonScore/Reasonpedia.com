@@ -1,0 +1,255 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: auto 1fr auto;
+	background-color: var(--background);
+}
+
+.content {
+	margin: auto;
+	max-width: var(--width);
+}
+
+p,
+pre,
+code {
+	line-height: 1.5;
+}
+
+a[href],
+a[href]:visited {
+	color: var(--primary);
+}
+
+a[href]:not(:hover) {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.focus-top img{
+	object-position: top;
+}
+
+.focus-bottom img{
+	object-position: bottom;
+}
+
+.focus-left img{
+	object-position: left;
+}
+
+.focus-right img{
+	object-position: right;
+}
+
+.content,
+.sidebar {
+	padding: 1em;
+	width: 100%;
+}
+
+.content {
+	padding-bottom: 2em;
+}
+
+.content > :first-child,
+.content > article :first-child {
+	margin-top: 0;
+}
+
+pre {
+	font-size: 14px;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	-moz-tab-size: 2;
+	tab-size: 2;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	padding: 1em;
+	margin: .5em 0;
+}
+
+/* Header Logo (style as h2) */
+
+header > em {
+	display: inline-block;
+	flex: 1;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Header Nav */
+.header ul {
+	padding: 0;
+	list-style: none;
+}
+
+.header ul :first-child {
+	margin-left: 0;
+}
+
+.header.horizontal {
+	display: flex;
+}
+
+.header.horizontal li {
+	display: inline-block;
+	margin: 0 .25em;
+}
+
+.header li a,
+.header li span
+{
+	padding: .25em .5em;
+	border-radius: .25em;
+}
+
+.header a[href]:not(:hover) {
+	text-decoration: none;
+}
+
+.header a[data-current="current item"],
+.header div[data-current="current item"]{
+	background-color: white;
+}
+
+.hamburger,
+nav,
+nav ul {
+	display: inline-block;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .header-nav{
+    display: none;
+  }
+}
+
+.sidebar{
+  background-color: white;
+}
+.sidebar > ul {
+  padding: 10px;
+  margin: 0;
+}
+.sidebar > li {
+  list-style: none;
+  margin-bottom:10px;
+}
+.sidebar a {
+  text-decoration: none;
+}
+.close-sidebar {
+  font-size: 1.5em;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+/* Posts List */
+article {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid var(--secondary);
+}
+
+.content > section > article > * {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+/* Post Tags */
+a[rel="tag"],
+a[rel="tag"]:visited {
+	display: inline-block;
+  vertical-align: text-top;
+  text-transform: uppercase;
+	letter-spacing: .1em;
+  font-size: .625em;
+  padding: 0 .5em;
+	line-height: 2em;
+	height: 2em;
+  border: 1px solid var(--secondary);
+	background-color: var(--secondary);
+	color: var(--primary);
+  border-radius: .25em;
+  text-decoration: none;
+	margin: 0 .5em .5em 0;
+}
+
+a[rel="tag"]:hover {
+	border: 1px solid var(--primary);
+	background-color: var(--primary);
+	color: var(--secondary);
+}
+
+a[rel="tag"]:last-child {
+	margin-right: 0;
+}
+
+/* Contact Form */
+form {
+  display: grid;
+	padding: 2em 0;
+}
+
+form label {
+  display: none;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+	font-size: 1rem;
+	font-family: "Avenir", "Avenir Next", sans-serif;
+}
+
+input,
+textarea {
+	border: 1px solid black;
+}
+
+button {
+	border: 1px solid var(--primary);
+	background-color: var(--primary);
+	color: var(--secondary);
+	cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+	:root {
+		font-size: 1.1rem;
+	}
+}
