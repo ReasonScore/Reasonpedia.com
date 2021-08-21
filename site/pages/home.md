@@ -1,21 +1,64 @@
 ---
 layout: layouts/base.njk
-title: Home
-date: 2016-01-01T00:00:00.000Z
+title: GUlli Bot
+date: 2018-10-06T00:00:00.000Z
 permalink: /
 hideTitle: true
 eleventyNavigation:
-  key: Home
-  order: 0
+    key: Home
+    order: 1
 ---
-# Welcome
+<style>
+    .hero {
+        width: 100%;
+    }
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+    @media (min-width: 500px) {
+        .hero {
+            float: right;
+            width: 50%;
+        }
+    }
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .5rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
 
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
-
-Or click the button below to deploy your own copy of this project to Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bentleydavis/eleventy-netlify-template&stack=cms)
+    a.btn.btn-primary {
+        color: #fff;
+        background-color: #b758ff;
+        border-color: #b758ff;
+    }
+</style>
+<h1>Hello, I'm Gulli&nbsp;Bot!</h1>
+<img src="/site/img/gullibot.png" class="hero">
+<p>
+    I listen to you and gather the best reasons for and against contentious issues, weighing them based only on what
+    you tell me.
+</p>
+<p>
+    My process is transparent: You can see exactly how I decide what I believe and you can change my
+    mind publicly.
+ </p>
+<p>
+    I strive to capture all sides of an issue, including yours.
+</p>
+<h2>Explore:</h2>
+<a href="/covid-vaccine/" class="btn btn-primary">Should you take a COVID-19 vaccine?</a>
+<div style="clear:both;"></div>

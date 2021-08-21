@@ -1,37 +1,49 @@
 ---
-title: About us
+title: About Gulli Bot
 layout: layouts/base.njk
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
+metaDescription: 
 date: 2017-01-01T00:00:00.000Z
-permalink: /about/index.html
+permalink: /about/
 hideTitle: false
 eleventyNavigation:
   key: About
-  order: 1
+  order: 2
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<style>
+  .hero{
+    max-width: 200px;
+  }
+    @media (min-width: 500px) {
+      .hero {
+          float: right;
+          width: 50%;
+      }
+  }
+</style>
+<img src="/site/img/gullibot.png" class="hero">
 
-Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
-fruit  
+Gulli Bot is a curious robot powered by humans and simple algorithms.
 
-## Our services
+Gulli Bot’s humans listen to you and document the common opinions of an issue - the “pros and cons” - along with supporting evidence. Gulli Bot’s algorithm scores them.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+Gulli Bot updates its score with every new piece of information so you know what Gulli Bot knows at any given moment. We invite everyone to let Gulli Bot know what is missing.
 
-### Blue-sky thinking
+Gulli Bot’s process is fully transparent. We call this process “Open Source Decision Making.” 
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+## The Human Behind Gulli Bot
 
-#### Management frameworks
+<div class="content-row">
+  <div>
+    <amp-img alt="Bentley smiling leaning against a wall" src="/site/img/bentley.jpg" width="600" height="600" layout="intrinsic"></amp-img>
+  </div>
+  <div>
 
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+  ### Founder
 
-##### Regulatory convergence
+  #### Bentley Davis
 
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+  Bentley builds interactive websites, mobile apps, and automates boring work. He also mentors businesses in the effective use of technology. He has been creating software for over 30 years, managing teams for over 20 years, and mentoring startups for over 5 years. He was chief technology officer of a startup that had a successful exit.
+
+  In 2011 Bentley saw two friends break up over a controversial issue. He tried to research the issue before he had dinner with each of them but could not find resources that organized all the opinions in an effective and usable way. He decided to build it, and Gulli Bot was born.
+  </div>
+</div>

@@ -15,6 +15,5 @@
     {% file './site/css/custom.css.md' %}
   {% endset %}
   <style  amp-custom>{{ css | cssmin | safe }}</style>
-
-  {% set js %}{% include "assets/js/inline.js" %}{% endset %}
+  
 </head>
