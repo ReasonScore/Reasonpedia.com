@@ -30,3 +30,10 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 1rem;
 }
+
+.rs-score .claim-inner a[href], rs-score .claim-inner a[href],
+.rs-score .claim-inner a[href]:visited, rs-score .claim-inner a[href]:visited  {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 400;
+}
