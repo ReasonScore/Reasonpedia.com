@@ -19,6 +19,7 @@ permalink: covid-vaccine/
     hideMainScore: true,
     dbCollection: "f-covid",
     search:true,
+    allowShowAll: false,
   }
 </script>
 <script src="https://ReasonScore.com/static/js/ReasonScoreFull.js"></script>
