@@ -1,8 +1,15 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
+## Set up custom email templates
+
+This sit does not have the netlify login code on the hope page so the default templates will not work.
+Go to the Netlify **Site Settings** and in the **Emails** section put in the following **Path to template:**
+- /admin/emails/invitation.html
+- /admin/emails/confirmation.html
+- /admin/emails/recovery.html
+- /admin/emails/change.html
+
+------------
 
 # Eleventy Netlify Boilerplate
-
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/)
 
 ## What is it?
 
