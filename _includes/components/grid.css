@@ -74,4 +74,5 @@ a.card {
   overflow: hidden;
   vertical-align: middle;
   text-align: center;
+  margin: auto;
 }
