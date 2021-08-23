@@ -10,7 +10,7 @@
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
 
   {% set css %}
-    {% file './site/css/base.css.md' %}
+    {% file './base.css' %}
     {% include 'components/grid.css' %}
     {% file './site/css/custom.css.md' %}
   {% endset %}

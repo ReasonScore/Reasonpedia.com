@@ -18,7 +18,14 @@ body {
 
 .content {
 	margin: auto;
+	width: 100%;
 	max-width: var(--width);
+	padding: 1em 1em 0 1em;
+}
+
+.content > :first-child,
+.content > article :first-child {
+	margin-top: 0;
 }
 
 p,
@@ -57,19 +64,9 @@ img {
 	object-position: right;
 }
 
-.content,
 .sidebar {
 	padding: 1em;
 	width: 100%;
-}
-
-.content {
-	padding-bottom: 2em;
-}
-
-.content > :first-child,
-.content > article :first-child {
-	margin-top: 0;
 }
 
 pre {
@@ -180,11 +177,6 @@ article {
 	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
 	border-bottom: 1px solid var(--secondary);
-}
-
-.content > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
 }
 
 /* Post Tags */
