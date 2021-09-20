@@ -1,12 +1,12 @@
 ---
-layout: layouts/base.njk
 title: GUlli Bot
 date: 2018-10-06T00:00:00.000Z
 permalink: /
 hideTitle: true
+layout: layouts/base.njk
 eleventyNavigation:
-    key: Home
-    order: 1
+  key: Home
+  order: 1
 ---
 <style>
     .hero {
@@ -46,6 +46,7 @@ eleventyNavigation:
         border-color: #b758ff;
     }
 </style>
+
 <h1>Hello, I'm Gulli&nbsp;Bot!</h1>
 <img src="/site/img/gullibot.png" class="hero">
 <p>
@@ -59,6 +60,8 @@ eleventyNavigation:
 <p>
     I strive to capture all sides of an issue, including yours.
 </p>
+
+<p><b>Your Reasons. Our Analysis. Better Decisions.</b></p>
 <h2>Explore:</h2>
 <a href="/covid-vaccine/" class="btn btn-primary">Should you take a COVID-19 vaccine?</a>
 <div style="clear:both;"></div>
