@@ -13,13 +13,15 @@ permalink: debate-definitions/
     editable: false,
     startClosed: false,
     portData: true,
-    scoreDescription: false,
+    scoreDescription: true,
     saveToCloud: false,
     moreInfo: true,
     hideMainScore: false,
     dbCollection: "f-debate-definitions",
     search:true,
     allowShowAll: true,
+    showFractionalized: true,
+    showBucket: false,
   }
 </script>
 <script src="https://ReasonScore.com/static/js/ReasonScoreFull.js"></script>
