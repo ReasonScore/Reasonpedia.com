@@ -12,14 +12,14 @@ permalink: debate-definitions/
     lines: false,
     editable: false,
     startClosed: true,
-    portData: false,
+    portData: true,
     scoreDescription: false,
     saveToCloud: false,
     moreInfo: true,
     hideMainScore: true,
     dbCollection: "f-debate-definitions",
     search:true,
-    allowShowAll: false,
+    allowShowAll: true,
   }
 </script>
 <script src="https://ReasonScore.com/static/js/ReasonScoreFull.js"></script>
