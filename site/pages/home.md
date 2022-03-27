@@ -62,6 +62,8 @@ eleventyNavigation:
 </p>
 
 <p><b>Your Reasons. Our Analysis. Better Decisions.</b></p>
+<h2>What should we discuss this week?</h2>
+<iframe style="width: 95%; max-width:500px; height: 80vh;border:none" src="https://app.sli.do/event/nPhPD54cj1gstCNhbfpa8U"></iframe>
 <h2>Explore:</h2>
 <a href="/covid-vaccine/" class="btn btn-primary">Should you take a COVID-19 vaccine?</a>
 <div style="clear:both;"></div>
