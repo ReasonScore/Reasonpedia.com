@@ -1,6 +1,6 @@
 ---
-title: "Should you get the COVID-19 Vaccine?"
-description: "Help me understand if you should get the vaccine even if recommended by the CDC."
+title: "Should you be able to sue a police officer that violates your constitutional rights?"
+description: "Help me understand if you should you be able to sue a police officer that violates your constitutional rights."
 permalink: qualified-immunity/
 ---
 
@@ -18,10 +18,11 @@ permalink: qualified-immunity/
     scoreDescription: false,
     saveToCloud: false,
     moreInfo: true,
-    hideMainScore: true,
+    hideMainScore: false,
     dbCollection: "f-qualified-immunity",
     search:true,
     allowShowAll: false,
+    showFractionalized: true,
   }
 </script>
 <script src="https://ReasonScore.com/static/js/ReasonScoreFull.js"></script>
