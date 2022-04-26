@@ -23,6 +23,7 @@ permalink: qualified-immunity/
     search:true,
     allowShowAll: false,
     showFractionalized: true,
+    showBucket: false,
   }
 </script>
 <script src="https://ReasonScore.com/static/js/ReasonScoreFull.js"></script>
