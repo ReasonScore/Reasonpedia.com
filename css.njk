@@ -3,6 +3,6 @@ permalink: /site.css
 ---
 {% set css %}
   {% file './base.css' %}
-  {% file './site/css/custom.css.md' %}
+  {% file './site/css/custom.css' %}
 {% endset %}
 {{ css | cssmin | safe }}

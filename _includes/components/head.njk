@@ -12,7 +12,7 @@
   {% set css %}
     {% file './base.css' %}
     {% include 'components/grid.css' %}
-    {% file './site/css/custom.css.md' %}
+    {% file './site/css/custom.css' %}
   {% endset %}
   <style  amp-custom>{{ css | cssmin | safe }}</style>
   

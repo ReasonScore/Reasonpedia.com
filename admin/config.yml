@@ -8,7 +8,6 @@ publish_mode: editorial_workflow
 media_folder: "site/img" # Media files will be stored in the repo under images/uploads
 
 collections:
-
   # Blogs
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
@@ -37,7 +36,12 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Wide", name: "wide", widget: "boolean", required: false }
-      - { label: "Hide Title", name: "hideTitle", widget: "boolean", required: false }
+      - {
+          label: "Hide Title",
+          name: "hideTitle",
+          widget: "boolean",
+          required: false,
+        }
       - label: "Layout"
         name: "layout"
         widget: "select"
@@ -51,16 +55,21 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
 
-
   # Site Settings
   - name: "site"
     label: "Site Settings"
     files:
       - label: "Custom CSS"
         name: "css"
-        file: "site/css/custom.css.md"
+        file: "site/css/custom.css"
         fields:
-          - { label: "Custom CSS", name: "body", widget: "code", default_language: 'css', output_code_only: true }
+          - {
+              label: "Custom CSS",
+              name: "body",
+              widget: "code",
+              default_language: "css",
+              output_code_only: true,
+            }
       - label: "Site Metadata"
         name: "metadata"
         file: "site/data/metadata.json"
@@ -72,9 +81,21 @@ collections:
         name: "footer"
         file: "site/footer.html"
         fields:
-          - { label: "footer", name: "body", widget: "code", default_language: 'html', output_code_only: true }
+          - {
+              label: "footer",
+              name: "body",
+              widget: "code",
+              default_language: "html",
+              output_code_only: true,
+            }
       - label: "Head"
         name: "head"
         file: "site/head.html"
         fields:
-          - { label: "footer", name: "body", widget: "code", default_language: 'html', output_code_only: true }
+          - {
+              label: "footer",
+              name: "body",
+              widget: "code",
+              default_language: "html",
+              output_code_only: true,
+            }

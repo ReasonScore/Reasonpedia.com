@@ -1,9 +1,8 @@
 ---
 layout: layouts/blog.njk
-title: Gulli's Blog
-metaDescription: A sample Blog page listing various posts and authors.
+title: Blog
 date: 2017-01-01
-permalink: /blog/index.html
+permalink: /blog/
 eleventyNavigation:
   key: Blog
   order: 3
