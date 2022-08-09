@@ -46,4 +46,5 @@ rs-score .claim-inner a[href]:visited {
 
 amp-sidebar li {
   font-size: 1.5em;
+  margin-top: 0.5em;
 }
