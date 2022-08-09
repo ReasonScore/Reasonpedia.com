@@ -43,3 +43,7 @@ rs-score .claim-inner a[href]:visited {
   text-decoration: underline;
   font-weight: 400;
 }
+
+amp-sidebar li {
+  font-size: 1.5em;
+}

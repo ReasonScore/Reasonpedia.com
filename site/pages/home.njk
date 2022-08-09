@@ -7,18 +7,37 @@ eleventyNavigation:
   order: 1
 ---
 
-<div style="
+<style>
+.home-grid{
   display:grid;
-  min-height: 75vh;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  min-height: 30vh;
   align-items:center;
-  gap:1em;
-  text-align: center; ">
+  text-align: center; 
+  margin:auto;
+  align-items:stretch;
+}
+
+.home-grid > div {
+  margin: 3em;
+}
+</style>
+
+<div class="home-grid">
   <div>
     <h1>Reasonpedia</h1>
-    <p>Help us find holes in popular arguments</p>
+    <p>Explore the reasons behind popular arguments <br/>and help us find holes in them</p>
   </div>
-  <h2><a href="./work">How it works</a></h2>
-  <div><h2><a href="./trust">Should You Trust Us?</a></h2>
-  <p>{% include "../../site/parts/trust.html" %} <a href="./trust">More about trust.</a></p>
+</div>
+
+<div  class="home-grid">
+  <div>
+    <h2><a href="./work">How it works</a></h2>
+    <p>{% include "../../site/parts/work.html" %} <a href="./work"><br/> More about how it works.</a></p>
+  </div>
+
+  <div>
+    <h2><a href="./trust">Should You Trust Us?</a></h2>
+    <p>{% include "../../site/parts/trust.html" %} <a href="./trust"><br/> More about trust.</a></p>
   </div>
 </div>
