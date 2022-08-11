@@ -10,7 +10,7 @@ eleventyNavigation:
 <style>
 .home-grid{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   min-height: 30vh;
   align-items:center;
   text-align: center; 
@@ -18,26 +18,41 @@ eleventyNavigation:
   align-items:stretch;
 }
 
+@media (max-width: 800px){
+  .home-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.bucketed{
+    border-bottom-right-radius: 2em;
+    border: 1em solid hsla(270deg 62% 44% / .1);
+    border-bottom-left-radius: 2em;
+    border-top: none;
+}
+
+
+
 .home-grid > div {
   margin: 3em;
 }
 </style>
 
 <div class="home-grid">
-  <div>
+  <div class="hero">
     <h1>Reasonpedia</h1>
     <p>Explore the reasons behind popular arguments <br/>and help us find holes in them</p>
   </div>
 </div>
 
 <div  class="home-grid">
-  <div>
+  <div class="bucketed">
     <h2><a href="./work">How it works</a></h2>
     <p>{% include "../../site/parts/work.html" %} <a href="./work"><br/> More about how it works.</a></p>
   </div>
 
-  <div>
-    <h2><a href="./trust">Should You Trust Us?</a></h2>
+  <div class="bucketed">
+    <h2><a href="./trust">Should You Trust&nbsp;Us?</a></h2>
     <p>{% include "../../site/parts/trust.html" %} <a href="./trust"><br/> More about trust.</a></p>
   </div>
 </div>
