@@ -12,4 +12,4 @@ eleventyNavigation:
 
 {% include "../../site/parts/trust.html" %}
 
-We even have a process of organizing and labeling our assumtions and reasons in such a way that you can quickly find where we are wrong.
+We even have a process of organizing and labeling the assumtions and reasons we found in such a way that you can quickly find where they are wrong.

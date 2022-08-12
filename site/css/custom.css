@@ -1,9 +1,41 @@
 :root {
-  --primary: hsl(270deg 62% 44%);
-  --secondary: white;
+  --primary-h: 280;
+  --primary-s: 62%;
+  --primary-l: 44%;
+
+  --secondary-h: 30;
+  --secondary-s: 62%;
+  --secondary-l: 44%;
+
+  --foreground: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --foreground-h: var(--primary-h);
+  --foreground-s: var(--primary-s);
+  --foreground-l: var(--primary-l);
+
   --background: white;
   --width: 1000px;
   --nav-break: 800px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .primary {
+    --foreground: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --foreground-h: var(--primary-h);
+    --foreground-s: var(--primary-s);
+    --foreground-l: var(--primary-l);
+    --background: white;
+  }
+  .secondary {
+    --foreground: hsl(
+      var(--secondary-h),
+      var(--secondary-s),
+      var(--secondary-l)
+    );
+    --foreground-h: var(--secondary-h);
+    --foreground-s: var(--secondary-s);
+    --foreground-l: var(--secondary-l);
+    --background: black;
+  }
 }
 
 body {
