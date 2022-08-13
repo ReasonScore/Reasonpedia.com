@@ -18,13 +18,26 @@
         right: 20%;
       }
     }
+
+    .experiment {
+      display: inline-block;
+      position: absolute;
+      bottom: -.5em;
+      right: 0;
+      font-size: .3em;
+      letter-spacing: .1em;
+      padding-right: .3em;
+    }
   </style>
   <div class="alpha">ALPHA</div>
 
   <div class="content">
     <header class="header horizontal">
       <em>
-        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+        <a href="{{ '/' | url }}">
+          <span style="position: relative;">Reasonpedia<span class="experiment">experiment
+            </span>
+        </a>
       </em>
       <nav>
         {% set navPages = collections.all | eleventyNavigation %}
