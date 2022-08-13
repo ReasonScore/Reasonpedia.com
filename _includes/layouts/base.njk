@@ -3,7 +3,7 @@
 	{% include "components/head.njk" %}
 	{% include "../../site/head.html" %}
 	<body>
-		{% include "components/nav.njk" %}
+		{% include "components/nav.html" %}
 		{% if not hideTitle %}<div class="content"><h1>{{ title }}</h1></div>{% endif %}
 		{% if not wide %}<div class="content">{% endif %}
 			{{ layoutContent | safe }}
