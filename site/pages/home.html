@@ -28,6 +28,9 @@ eleventyNavigation: {key: Home,order: 1}
     border-bottom-left-radius: 2em;
     border-top: none;
     padding: .5em;
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
   }
 
   .bucketed p {
@@ -62,11 +65,13 @@ eleventyNavigation: {key: Home,order: 1}
 <div class="home-grid">
   <div class="bucketed">
     <h2><a href="./work">How it works</a></h2>
-    <p>{% include "../../site/parts/work.html" %} <a href="./work"><br /><br /> More about how it works.</a></p>
+    <p>{% include "../../site/parts/work.html" %} </p>
+    <p><a href="./work">More about how it works.</a></p>
   </div>
 
   <div class="bucketed secondary">
     <h2><a href="./trust">Should You Trust&nbsp;Us?</a></h2>
-    <p>{% include "../../site/parts/trust.html" %} <a href="./trust"><br /><br /> More about trust.</a></p>
+    <p>{% include "../../site/parts/trust.html" %}</p>
+    <p><a href="./trust">More about trust.</a></p>
   </div>
 </div>
