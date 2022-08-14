@@ -19,6 +19,10 @@
       }
     }
 
+    .current-nav {
+      font-weight: bolder;
+    }
+
     .experiment {
       display: inline-block;
       position: absolute;
@@ -44,14 +48,14 @@
         <ul class="header-nav">
           {%- for entry in navPages %}
           <li>
-            <a href="{{ entry.url | url }}" {% if entry.url==page.url %} data-current="current item" {% endif %}>{{
+            <a href="{{ entry.url | url }}" {% if entry.url==page.url %} class="current-nav" {% endif %}>{{
               entry.title }}</a>
           </li>
           {%- endfor %}
         </ul>
         <ul class="hamburger">
           <li>
-            <span role="button" on="tap:sidebarNav.toggle" tabindex="0">Menu</span>
+            <span style="color: var(--foreground);" role="button" on="tap:sidebarNav.toggle" tabindex="0">Menu</span>
           </li>
         </ul>
       </nav>
@@ -64,7 +68,7 @@
   <ul>
     {%- for entry in navPages %}
     <li>
-      <a href="{{ entry.url | url }}" {% if entry.url==page.url %} data-current="current item" {% endif %}>{{
+      <a href="{{ entry.url | url }}" {% if entry.url==page.url %} class="current-nav" {% endif %}>{{
         entry.title }}</a>
     </li>
     {%- endfor %}
