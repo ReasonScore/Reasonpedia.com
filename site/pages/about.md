@@ -10,11 +10,18 @@ eleventyNavigation:
   order: 4
 ---
 
-## The Humans Behind Reasonpedia
+Reasonpedia is an experiment to see if we can reduce polatiry and make better decisions together by having a way of measuing the impact of all the pros and cons from both sides of an argument. It will probably only be usefule in specific types of arguments but it might just help.
+
+## Some Frequently asked questions
+
+[Should you Trust Reasonpedia?](./trust)
+[How are these analysis created?](./work)
+
+## The PeopleBehind Reasonpedia
 
 <div class="content-row">
   <div>
-    <amp-img alt="Bentley smiling leaning against a wall" src="/site/img/bentley.jpg" width="600" height="600" layout="intrinsic"></amp-img>
+    <amp-img alt="Bentley smiling leaning against a wall" src="/site/img/bentley.jpg" width="600" height="600" layout="responsive"></amp-img>
   </div>
   <div>
 
@@ -24,7 +31,9 @@ eleventyNavigation:
 
 Bentley builds interactive websites, mobile apps, and automates boring work. He also mentors businesses in the effective use of technology. He has been creating software for over 30 years, managing teams for over 20 years, and mentoring startups for over 5 years. He was chief technology officer of a startup that had a successful exit.
 
-In 2011 Bentley saw two friends break up over a controversial issue. He tried to research the issue before he had dinner with each of them but could not find resources that organized all the opinions in an effective and usable way. He decided to build it, and Reasonpedia was born.
+In 2011 Bentley saw two friends break up over a controversial issue. He tried to research the issue before he had dinner with each of them but could not find resources that organized all the opinions in an effective and usable way. He decided to build it.
+
+Lear more at [BentleyDavis.com](https://BentleyDavis.com)
 
   </div>
 </div>
