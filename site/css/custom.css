@@ -7,34 +7,44 @@
   --secondary-s: 62%;
   --secondary-l: 44%;
 
-  --foreground: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --ground-light: white;
+  --ground-dark: black;
+
+  --width: 1000px;
+  --nav-break: 800px;
+
   --foreground-h: var(--primary-h);
   --foreground-s: var(--primary-s);
   --foreground-l: var(--primary-l);
+  --foreground: hsl(
+    var(--foreground-h),
+    var(--foreground-s),
+    var(--foreground-l)
+  );
+}
 
-  --background: white;
-  --width: 1000px;
-  --nav-break: 800px;
+.secondary {
+  --foreground-h: var(--secondary-h);
+  --foreground-s: var(--secondary-s);
+  --foreground-l: var(--secondary-l);
+  --foreground: hsl(
+    var(--foreground-h),
+    var(--foreground-s),
+    var(--foreground-l)
+  );
+}
+
+@media not (prefers-color-scheme: dark) {
+  body {
+    background: var(--ground-light);
+    color: var(--ground-dark);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  .primary {
-    --foreground: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
-    --foreground-h: var(--primary-h);
-    --foreground-s: var(--primary-s);
-    --foreground-l: var(--primary-l);
-    --background: white;
-  }
-  .secondary {
-    --foreground: hsl(
-      var(--secondary-h),
-      var(--secondary-s),
-      var(--secondary-l)
-    );
-    --foreground-h: var(--secondary-h);
-    --foreground-s: var(--secondary-s);
-    --foreground-l: var(--secondary-l);
-    --background: black;
+  body {
+    background: var(--ground-dark);
+    color: var(--ground-light);
   }
 }
 
@@ -59,6 +69,10 @@ header {
 
 h2 {
   font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 .social {

@@ -9,7 +9,6 @@ eleventyNavigation: {key: Home,order: 1}
   .home-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    min-height: 30vh;
     align-items: center;
     text-align: center;
     margin: auto;
@@ -38,7 +37,7 @@ eleventyNavigation: {key: Home,order: 1}
   }
 
   .home-grid>div {
-    margin: 3em;
+    margin: 2em;
   }
 
   .hero {
@@ -77,4 +76,34 @@ eleventyNavigation: {key: Home,order: 1}
     <p>{% include "../../site/parts/trust.html" %}</p>
     <p><a href="./trust">More about trust.</a></p>
   </div>
+</div>
+
+
+<h2>Example Arguments:</h2>
+<div class="home-grid">
+
+  <div class="bucketed">
+    Why People Say:
+    <h3>Concealed carry laws reduce crime</h3>
+    <div>
+      <button class="btn-small" disabled>Coming Soon</button>
+    </div>
+  </div>
+
+  <div class="bucketed secondary">
+    <div>Why People Say:</div>
+    <h3>Ivermectin doesn't reduce Covid</h3>
+    <div>
+      <button class="btn-small" disabled>Coming Soon</button>
+    </div>
+  </div>
+
+  <div class="bucketed">
+    Why People Say:
+    <h3>Keto is a healthy long-term way of eating</h3>
+    <div>
+      <button class="btn-small" disabled>Coming Soon</button>
+    </div>
+  </div>
+
 </div>
