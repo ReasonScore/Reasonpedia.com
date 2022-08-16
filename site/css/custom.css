@@ -1,11 +1,11 @@
 :root {
   --primary-h: 280;
-  --primary-s: 62%;
-  --primary-l: 44%;
+  --saturation-light: 62%;
+  --lightness-light: 44%;
 
   --secondary-h: 30;
-  --secondary-s: 62%;
-  --secondary-l: 44%;
+  --saturation-dark: 100%;
+  --lightness-dark: 70%;
 
   --ground-light: white;
   --ground-dark: black;
@@ -13,9 +13,10 @@
   --width: 1000px;
   --nav-break: 800px;
 
+  /* Primary */
   --foreground-h: var(--primary-h);
-  --foreground-s: var(--primary-s);
-  --foreground-l: var(--primary-l);
+  --foreground-s: var(--saturation-light);
+  --foreground-l: var(--lightness-light);
   --foreground: hsl(
     var(--foreground-h),
     var(--foreground-s),
@@ -25,8 +26,8 @@
 
 .secondary {
   --foreground-h: var(--secondary-h);
-  --foreground-s: var(--secondary-s);
-  --foreground-l: var(--secondary-l);
+  --foreground-s: var(--saturation-light);
+  --foreground-l: var(--lightness-light);
   --foreground: hsl(
     var(--foreground-h),
     var(--foreground-s),
@@ -36,15 +37,35 @@
 
 @media not (prefers-color-scheme: dark) {
   body {
-    background: var(--ground-light);
+    --background-color: var(--ground-light);
+    background: var(--background-color);
     color: var(--ground-dark);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: var(--ground-dark);
+    --background-color: var(--ground-dark);
+    background: var(--background-color);
     color: var(--ground-light);
+
+    --foreground-s: var(--saturation-dark);
+    --foreground-l: var(--lightness-dark);
+    --foreground: hsl(
+      var(--foreground-h),
+      var(--foreground-s),
+      var(--foreground-l)
+    );
+  }
+
+  .secondary {
+    --foreground-s: var(--saturation-dark);
+    --foreground-l: var(--lightness-dark);
+    --foreground: hsl(
+      var(--foreground-h),
+      var(--foreground-s),
+      var(--foreground-l)
+    );
   }
 }
 
@@ -76,7 +97,7 @@ h3 {
 }
 
 .social {
-  fill: #b758ff;
+  fill: currentColor;
 }
 
 .content-row {

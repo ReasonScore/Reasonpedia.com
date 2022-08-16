@@ -67,11 +67,6 @@ img {
   object-position: right;
 }
 
-.sidebar {
-  padding: 1em;
-  width: 100%;
-}
-
 pre {
   font-size: 14px;
   direction: ltr;
@@ -154,8 +149,11 @@ nav ul {
 }
 
 .sidebar {
-  background-color: white;
+  padding: 1em;
+  width: 100%;
+  background-color: var(--background-color);
 }
+
 .sidebar > ul {
   padding: 10px;
   margin: 0;
