@@ -10,7 +10,7 @@ eleventyNavigation:
   order: 4
 ---
 
-Reasonpedia is an experiment to see if we can reduce polatiry and make better decisions together by having a way of measuing the impact of all the pros and cons from both sides of an argument. It will probably only be usefule in specific types of arguments but it might just help.
+Reasonpedia is an experiment to see if we can reduce polarity and make better decisions together by having a way of measuing the impact of all the pros and cons from both sides of an argument. It will probably only be usefule in specific types of arguments but it might just help.
 
 ## Some Frequently asked questions
 
