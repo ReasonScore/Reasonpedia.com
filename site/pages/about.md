@@ -17,7 +17,7 @@ Reasonpedia is an experiment to see if we can reduce polarity and make better de
 [Should you Trust Reasonpedia?](./trust)
 [How are these analysis created?](./work)
 
-## The PeopleBehind Reasonpedia
+## The People Behind Reasonpedia
 
 <div class="content-row">
   <div>
