@@ -33,7 +33,7 @@ Bentley builds interactive websites, mobile apps, and automates boring work. He 
 
 In 2011 Bentley saw two friends break up over a controversial issue. He tried to research the issue before he had dinner with each of them but could not find resources that organized all the opinions in an effective and usable way. He decided to build it.
 
-Lear more at [BentleyDavis.com](https://BentleyDavis.com)
+Learn more at [BentleyDavis.com](https://BentleyDavis.com)
 
   </div>
 </div>
