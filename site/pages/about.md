@@ -21,7 +21,7 @@ Reasonpedia is an experiment to see if we can reduce polarity and make better de
 
 <div class="content-row">
   <div>
-    <amp-img alt="Bentley smiling leaning against a wall" src="/site/img/bentley.jpg" width="600" height="600" layout="responsive"></amp-img>
+    <amp-img style="border-radius:1em;" alt="Bentley smiling leaning against a wall" src="/site/img/bentley.jpg" width="600" height="600" layout="responsive"></amp-img>
   </div>
   <div>
 
