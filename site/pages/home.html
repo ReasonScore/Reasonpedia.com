@@ -66,9 +66,15 @@ eleventyNavigation: {key: Home,order: 1}
     animation: 50s toggle infinite;
   }
 
+  @media (prefers-color-scheme: dark) {
+    .watermark {
+      opacity: .15;
+    }
+  }
+
   .watermark .conf,
   .watermark .canc {
-    transition: 10s;
+    transition: 15s;
   }
 
   @keyframes toggle {
@@ -88,6 +94,11 @@ eleventyNavigation: {key: Home,order: 1}
     }
 
     66% {
+      --confidence: 1;
+      --cancelled: 0;
+    }
+
+    86% {
       --confidence: 1;
       --cancelled: .75;
     }
@@ -143,7 +154,8 @@ eleventyNavigation: {key: Home,order: 1}
   <use href="#bucket-path"></use>
 </svg>
 
-<svg viewBox="0 0 100 100" class="watermark rs-bucket secondary right" style="right: max(-50vw, -50vh);">
+<svg viewBox="0 0 100 100" class="watermark rs-bucket secondary right"
+  style="right: max(-50vw, -50vh); animation-delay: -25s;">
   <g clip-path="url(#fillClip)">
     <use href="#canc" class="canc" />
     <use href="#conf" class="conf" />
