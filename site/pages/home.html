@@ -41,7 +41,7 @@ eleventyNavigation: {key: Home,order: 1}
   }
 
   .hero {
-    min-height: 30vh;
+    min-height: 70vh;
     margin: auto;
     width: fit-content;
     text-align: center;
@@ -54,6 +54,10 @@ eleventyNavigation: {key: Home,order: 1}
     font-size: min(10vw, 80px);
     width: fit-content;
     margin: auto;
+  }
+
+  .hero p {
+    font-size: min(5vw, 40px);
   }
 
   .watermark {
@@ -123,7 +127,7 @@ eleventyNavigation: {key: Home,order: 1}
   }
 </style>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <defs>
     <rect id="canc" x="20" y="10" width="60" height="60" mask="url(#checked-mask)" />
     <rect id="conf" x="20" y="10" width="60" height="60" />
@@ -170,7 +174,7 @@ eleventyNavigation: {key: Home,order: 1}
 <div class="hero">
   <h1 style="position: relative;">Reasonpedia<span class="experiment">experiment
   </h1>
-  <p>Explore&nbsp;the&nbsp;reasons&nbsp;behind popular&nbsp;and&nbsp;useful&nbsp;arguments <br />and help us find
+  <p>Explore&nbsp;the&nbsp;reasons&nbsp;behind<br>popular&nbsp;and&nbsp;useful&nbsp;arguments<br>and help us find
     holes in them</p>
 </div>
 
