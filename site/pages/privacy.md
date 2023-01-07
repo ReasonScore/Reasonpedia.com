@@ -43,7 +43,7 @@ We are not responsible for the performance of web sites operated by third partie
 Reasonpedia Presence on External Sites:
 Reasonpedia manages presences on external sites including social networks. We cannot control the privacy policies of host sites and advise that you check their privacy policies. Reasonpedia privacy policies apply across all platforms for the information we obtain directly from you or can gather through external sites, such as analytics.
 
-### Gullible is present on:
+### Reasonpedia is present on:
 
 - [Facebook](https://www.facebook.com/about/privacy)
 - [Twitter](https://twitter.com/en/privacy)
@@ -52,4 +52,4 @@ Reasonpedia manages presences on external sites including social networks. We ca
 
 ## How to contact us
 
-You can contact us by email at Gulli@GulliBot.com or on any of the social media platforms above.
+You can contact us by <a href="https://forms.gle/EgBAjbkpXVFDPLzG9">this form</a>.
