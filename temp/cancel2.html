@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Visualizations</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            --pro-h: 275;
+            --con-h: 37;
+            --lum: 75%;
+            --sat: 100%;
+            --size: 100px;
+            --con-c: hsla(var(--con-h), var(--sat), var(--lum), 1);
+            --pro-c: hsla(var(--pro-h), var(--sat), var(--lum), 1);
+        }
+
+        id {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-45deg) translate(calc(var(--size) * -1), 0%);
+        }
+
+        .mainGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(calc(var(--size) * 2), 1fr));
+            gap: 1rem;
+        }
+
+        .OverlapWrap {
+            position: relative;
+            width: calc(var(--size) * 2);
+            height: calc(var(--size) * 2);
+            /* transform-origin: center;
+            transform: scale(.7) rotate(45deg); */
+        }
+
+        .overlap {
+            top: 0px;
+            left: 0px;
+            width: calc(var(--size) * 2);
+            height: var(--size);
+            position: absolute;
+            border-right: 5px solid white;
+            border-left: 5px solid white;
+            box-sizing: border-box;
+            border-top-left-radius: calc(var(--size) / 2);
+            border-top-right-radius: calc(var(--size) / 2);
+
+        }
+
+        .pro {
+            top: calc(var(--size) - .5%);
+            left: 0;
+            width: var(--size);
+            height: var(--size);
+            position: absolute;
+            background: var(--pro-c);
+            /* border-top-right-radius: 50%; */
+            border-right: 5px solid white;
+            border-left: 5px solid white;
+            box-sizing: border-box;
+        }
+
+        .con {
+            top: calc(var(--size) - .5%);
+            left: calc(var(--size) - .5%);
+            width: var(--size);
+            height: var(--size);
+            position: absolute;
+            background: var(--con-c);
+            border-right: 5px solid white;
+            border-left: 5px solid white;
+            box-sizing: border-box;
+
+        }
+    </style>
+    <div class="mainGrid">
+        <div class="OverlapWrap">
+            <id>1</id>
+            <style>
+                .o1 {
+                    width: calc(var(--size) * 1.99);
+                    height: calc(var(--size) / 2);
+                    top: calc(var(--size) / 2);
+                    background:
+                        conic-gradient(from 270deg at 48% 100%,
+                            var(--pro-c) 0%,
+                            hsla(0, 0%, var(--lum), 0) 40%),
+                        conic-gradient(from 90deg at 52% 100%,
+                            hsla(0, 0%, var(--lum), 0) 50%,
+                            var(--con-c) 100%);
+                    background-blend-mode: exclusion;
+                }
+            </style>
+            <div class="overlap o1"></div>
+            <div class="pro"></div>
+            <div class="con"></div>
+        </div>
+    </div>
+</body>
+
+</html>

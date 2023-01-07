@@ -1,0 +1,123 @@
+<!-- ---
+permalink: /explainer/
+hideTitle: true
+layout: layouts/base.njk
+--- -->
+
+<style>
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  #stage {
+    width: min(90vw, 90vh);
+    height: min(90vw, 90vh);
+    box-shadow:
+      0 0 0 1px hsla(0, 0%, 100%, .1),
+      0 0 0 2px hsla(0, 0%, 0%, .1);
+    margin: auto;
+    position: relative;
+  }
+
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #theater {
+    height: 100%;
+    display: grid;
+  }
+
+  .divider {
+    max-width: 0;
+    height: 0px;
+    border: 2px solid black;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  .divide {
+    max-width: 100%;
+  }
+
+  .r-section {
+    border: 2px solid black;
+  }
+
+  .pro {
+    background-color: orange;
+  }
+
+  .con {
+    background-color: purple;
+  }
+</style>
+
+<div id="theater">
+  <div id="stage">
+
+  </div>
+</div>
+
+<script>
+  let speedMultiplier = 1;
+
+  function seconds(seconds) {
+    return new Promise(resolve => setTimeout(resolve, seconds * 1000 * speedMultiplier));
+  }
+
+  function createElement(type, attributes) {
+    const el = document.createElement(type);
+    for (const key in attributes) {
+      el.setAttribute(key, attributes[key]);
+    }
+    return el;
+  }
+
+  async function divide(parent, _seconds, top) {
+    const divider = createElement("div", {
+      class: "divider", style: `top:${top}%; transition:${_seconds}s`
+    });
+    parent.appendChild(divider);
+    setTimeout(() => { divider.classList.add("divide") }, 1)
+    await seconds(_seconds);
+  }
+
+
+
+  async function timeLine() {
+    await seconds(1);
+    const stage = document.getElementById("stage");
+    let section1 = createElement("div", {
+      class: "r-section pro", style: `height:100%;`
+    });
+    stage.appendChild(section1);
+    await divide(section1, 2, 50);
+
+    section1 = createElement("div", {
+      class: "r-section pro", style: `height:50%;`
+    });
+
+    section2 = createElement("div", {
+      class: "r-section pro", style: `height:50%; transition: 2s`
+    });
+
+    stage.replaceChildren(section2, section1)
+
+    await seconds(.01)
+    section2.classList.add("con")
+    console.log("done");
+    // await seconds(2);
+    // stage.innerHTML = "2";
+    // await seconds(2);
+    // stage.innerHTML = "Done";
+  }
+
+  timeLine()
+</script>
